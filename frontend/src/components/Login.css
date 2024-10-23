@@ -1,0 +1,104 @@
+/* src/components/Login.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a sans-serif font for a modern look */
+    background-color: #f0eef1; /* Light gray background for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.login-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.form-wrapper {
+    background-color: #faf7f7; /* White background for the form */
+    border: 2px solid #ffcc00; /* Caution tape border */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 10px 40px rgba(11, 11, 11, 0.3); /* Deeper shadow for depth */
+    max-width: 800px; /* Maximum width for the form */
+    padding: 100px; /* Padding for spaciousness */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.form-wrapper:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+h2 {
+    color: #ff5733; /* Bold title color */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    margin-bottom: 25px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase for sporty feel */
+    font-weight: bold; /* Bold title */
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.form {
+    width: 100%; /* Full width of the form */
+}
+
+.input-group {
+    margin: 15px 0; /* Margin for spacing between inputs */
+}
+
+input {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside inputs */
+    border: 2px solid #ff5733; /* Border color */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input:focus {
+    border-color: #080700; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(8, 8, 8, 0.5); /* Soft glow effect */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners for button */
+    padding: 12px; /* Padding inside button */
+    font-size: 1.1rem; /* Slightly larger font size for button */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    width: 112%; /* Full width button */
+    margin-top: 15px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #cc4629; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.message {
+    color: #333; /* Text color for messages */
+    margin-top: 20px; /* Space above messages */
+    font-weight: bold; /* Bold messages */
+    font-size: 1rem; /* Font size for messages */
+    text-align: center; /* Center align messages */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 500px) {
+    .form-wrapper {
+        padding: 20px; /* Reduced padding for smaller screens */
+        margin: 20px; /* Reduced margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Smaller font size for buttons on smaller screens */
+    }
+}

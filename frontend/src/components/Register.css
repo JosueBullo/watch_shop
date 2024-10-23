@@ -1,0 +1,90 @@
+/* src/components/Register.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a sans-serif font for a modern look */
+    background-color: #f0eef1; /* Light gray background for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.register-container {
+    background-color: #faf7f7; /* White background for the form */
+    border: 2px solid #ffcc00; /* Caution tape border */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 10px 40px rgba(11, 11, 11, 0.3); /* Deeper shadow for depth */
+    max-width: 450px; /* Maximum width for the form */
+    margin: 200px auto; /* Center the container */
+    padding: 100px; /* Increased padding for spaciousness */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.register-container:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+h2 {
+    color: #ff5733; /* Bold title color */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    margin-bottom: 25px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase for sporty feel */
+    font-weight: bold; /* Bold title */
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+input {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin: 15px 0; /* Margin above and below inputs */
+    border: 2px solid #ff5733; /* Border color */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input:focus {
+    border-color: #080700; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(8, 8, 8, 0.5); /* Soft glow effect */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners for button */
+    padding: 12px; /* Padding inside button */
+    font-size: 1.1rem; /* Slightly larger font size for button */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    width: 106%; /* Full width button */
+}
+
+button:hover {
+    background-color: #cc4629; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+p {
+    color: #333; /* Text color for messages */
+    margin-top: 20px; /* Space above messages */
+    font-weight: bold; /* Bold messages */
+    font-size: 1rem; /* Font size for messages */
+    text-align: center; /* Center align messages */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 500px) {
+    .register-container {
+        padding: 20px; /* Reduced padding for smaller screens */
+        margin: 20px; /* Reduced margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Smaller font size for buttons on smaller screens */
+    }
+}

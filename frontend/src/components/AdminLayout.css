@@ -1,0 +1,70 @@
+/* src/components/AdminLayout.css */
+
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    background-color: #f4f7f9; /* Light background for contrast */
+}
+
+.admin-layout {
+    display: flex; /* Use flexbox layout */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #343a40; /* Dark background for the navbar */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Padding around the navbar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick to the top */
+    height: 100%; /* Full height of the container */
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack links vertically */
+}
+
+.navbar-item {
+    padding: 15px; /* Increased padding for better touch targets */
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text for navbar items */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background 0.3s; /* Smooth background transition on hover */
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+.navbar-item:hover {
+    background-color: #495057; /* Darker background on hover */
+}
+
+/* Content Styles */
+.content {
+    flex-grow: 1; /* Allow content to fill the remaining space */
+    padding: 20px; /* Padding around the content */
+    overflow-y: auto; /* Allow vertical scrolling for content area */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff; /* White background for content area */
+    border-left: 1px solid #dee2e6; /* Light border to separate content from navbar */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height */
+    }
+    .navbar-item {
+        text-align: center; /* Center align items */
+    }
+}

@@ -1,104 +1,73 @@
-/* src/components/Login.css */
+/* Login.css */
 
 body {
-    font-family: 'Arial', sans-serif; /* Use a sans-serif font for a modern look */
-    background-color: #f0eef1; /* Light gray background for contrast */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-image: url('/src/assets/watch.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 .login-container {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
 }
 
 .form-wrapper {
-    background-color: #faf7f7; /* White background for the form */
-    border: 2px solid #ffcc00; /* Caution tape border */
-    border-radius: 10px; /* More rounded corners */
-    box-shadow: 0 10px 40px rgba(11, 11, 11, 0.3); /* Deeper shadow for depth */
-    max-width: 800px; /* Maximum width for the form */
-    padding: 100px; /* Padding for spaciousness */
-    text-align: center; /* Center text */
-    transition: transform 0.2s; /* Transition for hover effect */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
 }
 
-.form-wrapper:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
-}
-
-h2 {
-    color: #ff5733; /* Bold title color */
-    font-size: 2.5rem; /* Larger font size for emphasis */
-    margin-bottom: 25px; /* Space below the title */
-    text-transform: uppercase; /* Uppercase for sporty feel */
-    font-weight: bold; /* Bold title */
-    letter-spacing: 1px; /* Increased letter spacing */
-}
-
-.form {
-    width: 100%; /* Full width of the form */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #4A4A4A; /* Darker shade for elegance */
 }
 
 .input-group {
-    margin: 15px 0; /* Margin for spacing between inputs */
+    margin-bottom: 15px;
 }
 
-input {
-    width: 100%; /* Full width inputs */
-    padding: 12px; /* Padding inside inputs */
-    border: 2px solid #ff5733; /* Border color */
-    border-radius: 6px; /* Slightly rounded corners */
-    font-size: 1rem; /* Font size for inputs */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-input:focus {
-    border-color: #080700; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(8, 8, 8, 0.5); /* Soft glow effect */
-    outline: none; /* Remove outline */
+.input-field:focus {
+    border-color: #5C4D4D; /* Elegant focus border color */
+    outline: none;
 }
 
-button {
-    background-color: #ff5733; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 50px; /* Rounded corners for button */
-    padding: 12px; /* Padding inside button */
-    font-size: 1.1rem; /* Slightly larger font size for button */
-    cursor: pointer; /* Cursor changes to pointer */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
-    width: 112%; /* Full width button */
-    margin-top: 15px; /* Space above the button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C4D4D; /* Elegant button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #cc4629; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight grow effect on hover */
+.submit-button:hover {
+    background-color: #7B6E6E; /* Darker shade on hover */
 }
 
 .message {
-    color: #333; /* Text color for messages */
-    margin-top: 20px; /* Space above messages */
-    font-weight: bold; /* Bold messages */
-    font-size: 1rem; /* Font size for messages */
-    text-align: center; /* Center align messages */
-}
-
-/* Additional styles for responsive design */
-@media (max-width: 500px) {
-    .form-wrapper {
-        padding: 20px; /* Reduced padding for smaller screens */
-        margin: 20px; /* Reduced margin for smaller screens */
-    }
-
-    h2 {
-        font-size: 2rem; /* Smaller font size for smaller screens */
-    }
-
-    button {
-        font-size: 1rem; /* Smaller font size for buttons on smaller screens */
-    }
+    margin-top: 15px;
+    text-align: center;
+    color: #E74C3C; /* Error message color */
 }

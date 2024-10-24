@@ -1,74 +1,114 @@
-/* HomePage.css */
-
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
+    background-image: url('/src/assets/watch.jpg'); /* Add a visually appealing background */
+    background-size: cover;
+    background-position: center;
+    color: #dba9a9;
+    font-family: 'Arial', sans-serif; /* Modern font */
+    padding: 0px 20px;
 }
 
 .home-header {
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay for better contrast */
+    padding: 40px 20px;
+    border-radius: 12px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.home-header h1 {
+    font-weight: bold;
+    font-size: 3rem; /* Large heading */
+}
+
+.home-header p {
+    font-size: 1.25rem; /* Slightly larger paragraph */
+    color: rgb(144, 173, 202); /* Light color for better readability */
 }
 
 .home-content {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px 0;
+    max-width: 1999px;
+    margin: auto;
 }
 
 .featured-products {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem; /* Large heading for featured products */
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between product cards */
 }
 
 .product-card {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+    background-color: rgba(185, 150, 150, 0.9); /* Light background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* To round corners */
+    transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
+    padding: 20px; /* Padding inside cards */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.product-title {
+    font-size: 1.5rem; /* Title size */
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 1rem; /* Description size */
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.25rem; /* Price size */
+    color: #28a745; /* Green color for prices */
 }
 
 .about {
-    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark about section */
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.about h2 {
+    font-size: 2rem; /* Heading size */
+}
+
+.about p {
+    color: rgb(139, 164, 191); /* Light color for about section */
 }
 
 .home-footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
-    width: 100%;
 }
 
-.auth-links {
-    display: flex; /* Use flexbox for button alignment */
-    justify-content: center; /* Center buttons horizontally */
-    margin-top: 10px; /* Space between footer text and buttons */
-    gap: 10px; /* Space between buttons */
+.auth-links .btn {
+    transition: background-color 0.3s;
 }
 
-.auth-links button {
-    background-color: #ff5722; /* Sporty orange color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px; /* Reduced padding for a more compact button */
-    cursor: pointer;
-    font-size: 14px; /* Slightly smaller font size */
-    font-weight: bold; /* Bolder text for a sporty appearance */
-    text-transform: uppercase; /* Uppercase text for a sporty feel */
-    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
-}
-
-.auth-links button:hover {
-    background-color: #e64a19; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
-}
-
-.auth-links button:active {
-    transform: scale(0.95); /* Button shrink effect on click */
+.auth-links .btn:hover {
+    background-color: rgba(0, 123, 255, 0.8);
 }

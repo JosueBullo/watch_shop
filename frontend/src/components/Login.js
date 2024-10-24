@@ -1,4 +1,3 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import { loginUser } from '../api/auth'; // Ensure this path is correct
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
@@ -38,7 +37,7 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="form-wrapper">
-                <h2>Login</h2>
+                <h2 className="form-title">Login to Your Account</h2>
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="input-group">
                         <input
@@ -47,6 +46,7 @@ const Login = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
+                            className="input-field"
                         />
                     </div>
                     <div className="input-group">
@@ -56,9 +56,10 @@ const Login = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
+                            className="input-field"
                         />
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" className="submit-button">Login</button>
                 </form>
                 {message && <p className="message">{message}</p>} {/* Display the message if exists */}
             </div>

@@ -22,8 +22,8 @@ const Register = () => {
 
     return (
         <div className="register-container">
-            <h2>Register</h2>
-            <form onSubmit={handleSubmit}>
+            <h2>Create an Account</h2>
+            <form onSubmit={handleSubmit} className="register-form">
                 <input
                     type="text"
                     placeholder="Username"
@@ -45,9 +45,9 @@ const Register = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-                <button type="submit">Register</button>
+                <button type="submit" className="btn">Register</button>
             </form>
-            {message && <p>{message}</p>} {/* Display the message if exists */}
+            {message && <p className="message">{message}</p>} {/* Display the message if exists */}
         </div>
     );
 };

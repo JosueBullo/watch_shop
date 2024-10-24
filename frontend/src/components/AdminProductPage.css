@@ -1,52 +1,21 @@
-/* src/components/AdminProductPage.css */
-.admin-product-page {
-    width: 80%;
-    margin: 0 auto;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-form input,
-form textarea {
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-    max-width: 400px;
-}
-
-button {
-    padding: 8px 16px;
-    margin-right: 10px;
-    background-color: #28a745;
-    color: white;
+.btn-warning {
+    background-color: #ffc107;
     border: none;
-    cursor: pointer;
+    color: white;
 }
 
-button:hover {
-    background-color: #218838;
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
 }
 
-.product-list {
-    margin-top: 20px;
+.btn-warning:hover, .btn-danger:hover {
+    opacity: 3.0;
 }
 
-.product-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.product-list li {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.product-list img {
-    max-width: 100px;
-    display: block;
-    margin-top: 10px;
+.img-thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
 }

@@ -1,90 +1,68 @@
 /* src/components/Register.css */
 
 body {
-    font-family: 'Arial', sans-serif; /* Use a sans-serif font for a modern look */
-    background-color: #f0eef1; /* Light gray background for contrast */
     margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Font family for the whole page */
+    background-color: #f4f4f4; /* Light background color */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .register-container {
-    background-color: #faf7f7; /* White background for the form */
-    border: 2px solid #ffcc00; /* Caution tape border */
-    border-radius: 10px; /* More rounded corners */
-    box-shadow: 0 10px 40px rgba(11, 11, 11, 0.3); /* Deeper shadow for depth */
-    max-width: 450px; /* Maximum width for the form */
-    margin: 200px auto; /* Center the container */
-    padding: 100px; /* Increased padding for spaciousness */
-    text-align: center; /* Center text */
-    transition: transform 0.2s; /* Transition for hover effect */
+    max-width: 500px; /* Increased maximum width for the container */
+    width: 100%; /* Allow it to take full width up to max-width */
+    padding: 30px; /* Increased inner spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center text for cleaner layout */
 }
 
-.register-container:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
+.register-container h2 {
+    margin-bottom: 25px; /* Space below the heading */
+    font-size: 2rem; /* Increased heading size */
 }
 
-h2 {
-    color: #ff5733; /* Bold title color */
-    font-size: 2.5rem; /* Larger font size for emphasis */
-    margin-bottom: 25px; /* Space below the title */
-    text-transform: uppercase; /* Uppercase for sporty feel */
-    font-weight: bold; /* Bold title */
-    letter-spacing: 1px; /* Increased letter spacing */
+.register-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
 }
 
-input {
-    width: 100%; /* Full width inputs */
-    padding: 12px; /* Padding inside inputs */
-    margin: 15px 0; /* Margin above and below inputs */
-    border: 2px solid #ff5733; /* Border color */
-    border-radius: 6px; /* Slightly rounded corners */
-    font-size: 1rem; /* Font size for inputs */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+.register-form input {
+    margin-bottom: 15px; /* Space between input fields */
+    padding: 12px; /* Increased inner spacing for inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for inputs */
+    color: #fff; /* White text */
+    font-size: 1.1rem; /* Increased font size for inputs */
 }
 
-input:focus {
-    border-color: #080700; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(8, 8, 8, 0.5); /* Soft glow effect */
-    outline: none; /* Remove outline */
+.register-form input::placeholder {
+    color: #ddd; /* Light color for placeholder text */
 }
 
-button {
-    background-color: #ff5733; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 50px; /* Rounded corners for button */
-    padding: 12px; /* Padding inside button */
-    font-size: 1.1rem; /* Slightly larger font size for button */
-    cursor: pointer; /* Cursor changes to pointer */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
-    width: 106%; /* Full width button */
+.register-form button {
+    padding: 14px; /* Increased button padding */
+    background-color: #007bff; /* Primary color for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* White text */
+    font-size: 1.1rem; /* Increased font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
-button:hover {
-    background-color: #cc4629; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight grow effect on hover */
+.register-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-p {
-    color: #333; /* Text color for messages */
-    margin-top: 20px; /* Space above messages */
-    font-weight: bold; /* Bold messages */
+.message {
+    margin-top: 20px; /* Space above the message */
+    text-align: center; /* Center the message */
+    color: #ff3333; /* Red color for error messages */
     font-size: 1rem; /* Font size for messages */
-    text-align: center; /* Center align messages */
-}
-
-/* Additional styles for responsive design */
-@media (max-width: 500px) {
-    .register-container {
-        padding: 20px; /* Reduced padding for smaller screens */
-        margin: 20px; /* Reduced margin for smaller screens */
-    }
-
-    h2 {
-        font-size: 2rem; /* Smaller font size for smaller screens */
-    }
-
-    button {
-        font-size: 1rem; /* Smaller font size for buttons on smaller screens */
-    }
 }
